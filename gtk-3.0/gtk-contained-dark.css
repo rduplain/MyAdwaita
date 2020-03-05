@@ -1402,7 +1402,7 @@ modelbutton.flat,
   outline-offset: -2px; }
   modelbutton.flat:hover,
   .menuitem.button.flat:hover {
-    background-color: #404040; }
+    background-color: #7080a0; }
 
 modelbutton.flat arrow {
   background: none; }
@@ -1533,7 +1533,7 @@ spinbutton:not(.vertical) {
       border-style: none solid none none; }
     spinbutton:not(.vertical) button:hover {
       color: #dcdcdc;
-      background-color: rgba(220, 220, 220, 0.05); }
+      background-color: #7080a0; }
     spinbutton:not(.vertical) button:disabled {
       color: rgba(136, 136, 136, 0.3);
       background-color: transparent; }

@@ -20,7 +20,7 @@ $dark_fill: $bg_color;
 $headerbar_color: $bg_color;
 $menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
 $popover_bg_color: $bg_color;
-$popover_hover_color: lighten($bg_color, 5%);
+$popover_hover_color: #7080a0;
 
 $scrollbar_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 80%), mix($base_color, $bg_color, 50%));
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
@@ -40,7 +40,7 @@ $osd_insensitive_fg_color: #888888;
 $osd_borders_color: transparentize(#333333, 0.3);
 
 $sidebar_bg_color: mix($bg_color, $base_color, 50%);
-$base_hover_color: transparentize($fg_color, 0.95);
+$base_hover_color: #7080a0;
 
 $tooltip_borders_color: transparentize(#dcdcdc, 0.9);
 $shadow_color: transparentize(#333333, 0.9);
