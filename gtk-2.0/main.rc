@@ -7,8 +7,8 @@
 
 style "default" {
 
-  xthickness = 1
-  ythickness = 1
+  xthickness = 0
+  ythickness = 0
 
   ####################
   # Style Properties #
