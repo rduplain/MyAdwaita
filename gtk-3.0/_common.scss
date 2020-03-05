@@ -153,7 +153,7 @@ flowbox {
   background-color: if($variant=='light', transparent, black);
   border-radius: 0;
   padding: 0;
-  
+
   &:backdrop { background-color: if($variant=='light', transparent, darken($backdrop_base_color,5%)); }
   &:active, &:selected { background-color: if($variant=='light', transparent, $selected_bg_color); }
   &:disabled { background-color: if($variant=='light', transparent, $insensitive_bg_color); }
@@ -430,9 +430,9 @@ treeview entry {
 .entry-tag {
   @include button(undecorated);
   background-color: darken($base_color,10%);
- 
+
   &:hover { background-color: $base_color; }
-  
+
   .button {
     @include button(undecorated);
     background-color: transparent;

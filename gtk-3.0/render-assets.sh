@@ -8,7 +8,7 @@ ASSETS_DIR="assets"
 INDEX="assets.txt"
 
 for i in `cat $INDEX`
-do 
+do
 if [ -f $ASSETS_DIR/$i.png ]; then
     echo $ASSETS_DIR/$i.png exists.
 else
@@ -17,7 +17,7 @@ else
     $INKSCAPE --export-id=$i \
               --export-id-only \
               --export-png=$ASSETS_DIR/$i.png $SRC_FILE >/dev/null #\
-    # && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i.png 
+    # && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i.png
 fi
 if [ -f $ASSETS_DIR/$i@2.png ]; then
     echo $ASSETS_DIR/$i@2.png exists.
@@ -28,7 +28,7 @@ else
               --export-dpi=180 \
               --export-id-only \
               --export-png=$ASSETS_DIR/$i@2.png $SRC_FILE >/dev/null #\
-    # && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i@2.png 
+    # && $OPTIPNG -o7 --quiet $ASSETS_DIR/$i@2.png
 fi
 done
 exit 0
