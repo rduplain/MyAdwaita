@@ -1,0 +1,7 @@
+[X-GNOME-Metatheme]
+Name=MyAdwaita
+Comment=There was only one (and this is it's clone)
+GtkTheme=MyAdwaita
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24
