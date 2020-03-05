@@ -2124,9 +2124,9 @@ treeview.view {
   treeview.view:disabled {
     color: #8b8e8f; }
     treeview.view:disabled:selected {
-      color: gainsboro; }
+      color: #dcdcdc; }
       treeview.view:disabled:selected:backdrop {
-        color: #e6e6e6; }
+        color: #fcfcfc; }
     treeview.view:disabled:backdrop {
       color: #c3c3c0; }
   treeview.view.separator {
@@ -2153,11 +2153,11 @@ treeview.view {
     treeview.view.expander:hover {
       color: black; }
     treeview.view.expander:selected {
-      color: gainsboro; }
+      color: #dcdcdc; }
       treeview.view.expander:selected:hover {
         color: #dcdcdc; }
       treeview.view.expander:selected:backdrop {
-        color: #f2f2f2; }
+        color: #fcfcfc; }
     treeview.view.expander:checked {
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     treeview.view.expander:backdrop {
@@ -4616,7 +4616,7 @@ entry selection, modelbutton.flat:selected,
     textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, modelbutton.flat:disabled:selected,
     .menuitem.button.flat:disabled:selected, row:disabled:selected, calendar:disabled:selected {
-      color: gainsboro; }
+      color: #dcdcdc; }
     row:selected label:backdrop, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus,
@@ -4634,7 +4634,7 @@ entry selection, modelbutton.flat:selected,
       textview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, spinbutton:not(.vertical) selection:backdrop:disabled,
       entry selection:backdrop:disabled, modelbutton.flat:backdrop:disabled:selected,
       .menuitem.button.flat:backdrop:disabled:selected, row:backdrop:disabled:selected, calendar:backdrop:disabled:selected {
-        color: #e6e6e6; }
+        color: #fcfcfc; }
 
 .monospace {
   font-family: monospace; }

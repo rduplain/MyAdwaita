@@ -18,7 +18,7 @@ $link_visited_color: if($variant == 'light', darken($selected_bg_color, 20%), #7
 $top_hilight: $borders_edge;
 $dark_fill: $bg_color;
 $headerbar_color: $bg_color;
-$menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
+$menu_color: if($variant == 'light', $base_color, $bg_color);
 $popover_bg_color: $bg_color;
 $popover_hover_color: #7080a0;
 

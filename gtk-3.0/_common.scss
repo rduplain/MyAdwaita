@@ -1692,8 +1692,8 @@ treeview.view {
     color: $insensitive_fg_color;
 
     &:selected {
-      color: mix($selected_fg_color, $selected_bg_color, 40%);
-      &:backdrop { color: mix($backdrop_selected_fg_color, $selected_bg_color, 30%); }
+      color: $selected_fg_color;
+      &:backdrop { color: $backdrop_selected_fg_color; }
     }
 
     &:backdrop { color: $backdrop_insensitive_color; }
@@ -1730,11 +1730,11 @@ treeview.view {
     &:hover { color: $text_color; }
 
     &:selected {
-      color: mix($selected_fg_color, $selected_bg_color, 70%);
+      color: $selected_fg_color;
 
       &:hover { color: $selected_fg_color; }
 
-      &:backdrop { color: mix($backdrop_selected_fg_color, $selected_bg_color, 70%); }
+      &:backdrop { color: $backdrop_selected_fg_color; }
     }
 
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
@@ -4277,12 +4277,12 @@ headerbar.selection-mode button.titlebutton,
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;
 
-    &:disabled { color: mix($selected_fg_color, $selected_bg_color, 50%); }
+    &:disabled { color: $selected_fg_color; }
 
     &:backdrop {
       color: $backdrop_selected_fg_color;
 
-      &:disabled { color: mix($backdrop_selected_fg_color, $selected_bg_color, 30%); }
+      &:disabled { color: $backdrop_selected_fg_color; }
     }
   }
 }
