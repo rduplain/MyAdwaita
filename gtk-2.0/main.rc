@@ -71,7 +71,7 @@ style "default" {
   GtkProgressBar::min-vertical-bar-width    = 6
   # Making this bigger than the min[height,width]-2*[y,x]spacing makes the
   # whole progressbar thicker, so by setting it to the exact above value
-  # we get the maximum spacing between the text and the edges without
+  # we get the maximum spacing between the text and the edges without
   # doing so.
   GtkProgressBar::xspacing = 4
   GtkProgressBar::yspacing = 4
@@ -96,7 +96,7 @@ style "default" {
   GtkTreeView::vertical-separator   = 0
   GtkTreeView::horizontal-separator = 4
   GtkTreeView::allow-rules          = 0
-  # Set this because some apps read it
+  # Set this because some apps read it
   GtkTreeView::odd-row-color        = @base_color
   GtkTreeView::even-row-color       = @base_color
 
@@ -134,7 +134,7 @@ style "default" {
 
   # For succinctness, all reasonable pixmap options remain here
 
-  # Draw frame around menu in a non-compositied environment
+  # Draw frame around menu in a non-compositied environment
   # This needs to go before pixmap because we need to override some stuff
   engine "adwaita" {}
 
@@ -392,9 +392,9 @@ style "default" {
     # Arrows #
     ##########
 
-    # Overrides
+    # Overrides
 
-    # Disable arrows in spinbuttons
+    # Disable arrows in spinbuttons
     image {
       function = ARROW
       detail = "spinbutton"
@@ -724,7 +724,7 @@ style "default" {
       file           = "assets/pan-down.png"
     }
 
-    # LTR
+    # LTR
 
     image {
       function       = EXPANDER
@@ -747,7 +747,7 @@ style "default" {
       direction      = LTR
     }
 
-    # RTL
+    # RTL
 
     image {
       function       = EXPANDER
@@ -771,7 +771,7 @@ style "default" {
     }
 
     #############
-    # Notebooks #
+    # Notebooks #
     #############
 
     # Left
@@ -793,7 +793,7 @@ style "default" {
       gap_side = RIGHT
     }
 
-    # Right
+    # Right
 
     image {
       function = EXTENSION
@@ -812,7 +812,7 @@ style "default" {
       gap_side = LEFT
     }
 
-    # Up
+    # Up
 
     image {
       function = EXTENSION
@@ -831,7 +831,7 @@ style "default" {
       gap_side = BOTTOM
     }
 
-    # Down
+    # Down
 
     image {
       function = EXTENSION
@@ -906,7 +906,7 @@ style "default" {
     }
 
     ##############
-    # Scrollbars #
+    # Scrollbars #
     ##############
 
     image {
@@ -936,7 +936,7 @@ style "default" {
     }
 
 
-    # Disable insensitive sliders
+    # Disable insensitive sliders
 
     image {
       function = SLIDER
@@ -1011,7 +1011,7 @@ style "default" {
       direction   = LTR
     }
 
-    # RTL
+    # RTL
 
     image {
       function    = SLIDER
@@ -1050,7 +1050,7 @@ style "default" {
     # Scales #
     ##########
 
-    # Troughs, overrided later on. We set them here too because some widgets
+    # Troughs, overrided later on. We set them here too because some widgets
     # don't specify their orientation.
 
     image {
@@ -1089,7 +1089,7 @@ style "default" {
       orientation = VERTICAL
     }
 
-    # Sliders
+    # Sliders
 
     image {
       function = SLIDER
@@ -1469,7 +1469,7 @@ style "default" {
     # Treeviews #
     #############
 
-    # Disable active the column highlight
+    # Disable active the column highlight
     # We need to match specific cells or we break stuff
     # Looking at you deadbeef
 
@@ -1485,7 +1485,7 @@ style "default" {
       state    = NORMAL
     }
 
-    # Disable all the other shadows
+    # Disable all the other shadows
     # This prevents the Raleigh effect
     image {
       function = SHADOW
@@ -1547,7 +1547,7 @@ style "menu_item" {
   text[NORMAL]   = @fg_color
   text[PRELIGHT] = @selected_fg_color
 
-  # Unfortunately we can't tell regular and menu checks/radios apart
+  # Unfortunately we can't tell regular and menu checks/radios apart
   # Without the heirarchy
   engine "pixmap" {
 
@@ -1780,7 +1780,7 @@ style "button" {
   engine "pixmap" {
 
     ###########
-    # Buttons #
+    # Buttons #
     ###########
 
     image {
@@ -1841,8 +1841,8 @@ style "link_button" {
 
 style "entry" {
 
-  # We set this same as the border of the border of the entry
-  # This way there's no overlap
+  # We set this same as the border of the border of the entry
+  # This way there's no overlap
   xthickness = 4
   ythickness = 4
 
@@ -2034,7 +2034,7 @@ style "combo_button_padding" {
 
   # Since one side of the button is missing, we need to shift the arrow a
   # little to the right.
-  # This is the same thing we've done above but the combo, unlike the combobox,
+  # This is the same thing we've done above but the combo, unlike the combobox,
   # uses padding the same way as a button.
   GtkButton::inner-border = {6, 8, 4, 4}
 
@@ -2506,21 +2506,21 @@ widget_class "*<GtkTreeView>*<GtkButton>*"                         style "treevi
 # Give the file chooser toolbar a border
 widget_class "*<GtkFileChooserDefault>*<GtkToolbar>"               style "inline_toolbar"
 
-# Fix padding on regular comboboxes
+# Fix padding on regular comboboxes
 widget_class "*<GtkComboBox>.<GtkButton>"                          style "combobox"
 # And disable separators on them
 widget_class "*<GtkComboBox>.<GtkButton>*<GtkSeparator>"           style "disable_separator"
 
-# Join together the ComboBoxEntry entry and button
+# Join together the ComboBoxEntry entry and button
 widget_class "*<GtkComboBoxEntry>*"                                style "combobox_entry"
 
-# Join the Combo entry and button
+# Join the Combo entry and button
 widget_class "*<GtkCombo>*"                                        style "combobox_entry"
-# Tweak the padding on the button a little bit because it
+# Tweak the padding on the button a little bit because it
 # uses it a bit differently
 widget_class "*<GtkCombo>.<GtkButton>"                             style "combo_button_padding"
 
-# Alas we cannot do the same for ComboBoxText because there
+# Alas we cannot do the same for ComboBoxText because there
 # isn't a way to apply the style to only the comboboxes that
 # have an entry inside
 
