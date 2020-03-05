@@ -1487,11 +1487,7 @@ button:visited {
   button:backdrop:link,
   button:backdrop:visited {
     color: #4a90d9; }
-  infobar.info *:link, infobar.info button:link,
-  infobar.info button:visited, infobar.question *:link, infobar.question button:link,
-  infobar.question button:visited, infobar.warning *:link, infobar.warning button:link,
-  infobar.warning button:visited, infobar.error *:link, infobar.error button:link,
-  infobar.error button:visited, button:link > label:selected,
+  infobar.info :link, infobar.question :link, infobar.warning :link, infobar.error :link, button:link > label:selected,
   button:visited > label:selected, *:selected button:link > label,
   *:selected button:visited > label,
   *:link:selected,

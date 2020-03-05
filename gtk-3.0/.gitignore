@@ -1,0 +1,4 @@
+Gemfile.lock
+.Makefile.d/
+.reqd/
+.sass-cache/
