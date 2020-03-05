@@ -3,10 +3,12 @@
 # GTK+ 2 hardcodes a light shadow under certain inactive things. We can use this
 # horrible workaround to make it at least distinguishable.
 
+# Use foreground color, as this matches the light shadow.
+
 style "dark_insensitive" {
 
-  fg[INSENSITIVE]   = "#000000"
-  text[INSENSITIVE] = "#000000"
+  fg[INSENSITIVE]   = "#dcdcdc"
+  text[INSENSITIVE] = "#dcdcdc"
 
 }
 
