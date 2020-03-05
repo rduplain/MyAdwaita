@@ -15,7 +15,9 @@ On GNU/Linux systems:
 * Use `gnome-tweaks` (e.g. `sudo apt install gnome-tweaks`) to set GTK 3 theme.
 
 Changes are often picked up immediately with new windows, but it's useful to
-restart the desktop session when confirming changes.
+restart the desktop session when confirming changes. For GTK 2, it's useful to
+have a tool such as `gtk-chtheme` (e.g. `sudo apt install gtk-chtheme`) to hit
+"Apply" on the selected theme.
 
 
 ### Development
