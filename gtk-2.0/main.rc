@@ -14,7 +14,7 @@ style "default" {
   # Style Properties #
   ####################
 
-  GtkWidget::focus-line-width = 1
+  GtkWidget::focus-line-width = 2
   GtkWidget::focus-line-pattern = "\2\1"
 
   GtkToolbar::internal-padding = 4
