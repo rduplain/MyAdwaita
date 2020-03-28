@@ -36,7 +36,7 @@ $osd_fg_color: #dcdcdc;
 $osd_text_color: #dcdcdc;
 $osd_bg_color: transparentize($bg_color, 0.3);
 $osd_insensitive_bg_color: $osd_bg_color;
-$osd_insensitive_fg_color: #888888;
+$osd_insensitive_fg_color: $osd_fg_color;
 $osd_borders_color: transparentize(#333333, 0.3);
 
 $sidebar_bg_color: mix($bg_color, $base_color, 50%);
@@ -47,9 +47,9 @@ $shadow_color: #333333;
 
 $drop_target_color: $success_color;
 
-//insensitive state derived colors
-$insensitive_fg_color: mix($fg_color, $bg_color, 50%);
-$insensitive_bg_color: mix($bg_color, $base_color, 60%);
+//treat insensitive no differently.
+$insensitive_fg_color: $fg_color;
+$insensitive_bg_color: $bg_color;
 $insensitive_borders_color: $borders_color;
 
 //colors for the backdrop state, derived from the main colors.
