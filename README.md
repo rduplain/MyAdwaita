@@ -39,6 +39,6 @@ Note that theme personalization forces dark mode; the light variant is unused.
 ### Upstream
 
 * gtk-2.0 theme is a clone of Adwaita-dark from Ubuntu 18.04.
-* gtk-3.0 theme comes from [gtk source][gtk] at tag 3.22.14.
+* gtk-3.0 theme originates from [gtk source][gtk] at tag 3.22.14.
 
 [gtk]: https://gitlab.gnome.org/GNOME/gtk.git
