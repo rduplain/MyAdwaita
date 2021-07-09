@@ -319,7 +319,7 @@ entry {
       -gtk-icon-shadow: none; }
     .osd spinbutton:disabled:not(.vertical), .osd
     entry:disabled {
-      color: #888888;
+      color: #dcdcdc;
       border-color: rgba(51, 51, 51, 0.7);
       background-color: rgba(232, 232, 231, 0.7);
       background-clip: padding-box;
@@ -667,7 +667,7 @@ button.osd {
     box-shadow: none; }
   button.osd:disabled:backdrop,
   button.osd:disabled {
-    color: #888888;
+    color: #dcdcdc;
     border-color: rgba(51, 51, 51, 0.7);
     background-color: transparent;
     background-image: image(rgba(232, 232, 231, 0.7));
@@ -726,7 +726,7 @@ button {
   popover.background.touch-selection button:disabled:backdrop, popover.background.magnifier button:disabled:backdrop, .app-notification button:disabled:backdrop, popover.background.touch-selection button:disabled, popover.background.magnifier button:disabled, .app-notification button:disabled, .osd
   button:disabled:backdrop, .osd
   button:disabled {
-    color: #888888;
+    color: #dcdcdc;
     border-color: rgba(51, 51, 51, 0.7);
     background-color: transparent;
     background-image: image(rgba(232, 232, 231, 0.7));
@@ -768,7 +768,7 @@ button {
       outline-color: rgba(220, 220, 220, 0.3); }
     popover.background.touch-selection button.flat:disabled, popover.background.magnifier button.flat:disabled, .app-notification button.flat:disabled, .osd
     button.flat:disabled {
-      color: #888888;
+      color: #dcdcdc;
       border-color: rgba(51, 51, 51, 0.7);
       background-color: transparent;
       background-image: image(rgba(232, 232, 231, 0.7));
@@ -964,7 +964,7 @@ button.suggested-action {
     .osd
     button.suggested-action:disabled:backdrop, .osd
     button.suggested-action:disabled {
-      color: #888888;
+      color: #dcdcdc;
       border-color: rgba(51, 51, 51, 0.7);
       background-color: transparent;
       background-image: image(rgba(232, 232, 231, 0.7));
@@ -1137,7 +1137,7 @@ button.destructive-action {
     .osd
     button.destructive-action:disabled:backdrop, .osd
     button.destructive-action:disabled {
-      color: #888888;
+      color: #dcdcdc;
       border-color: rgba(51, 51, 51, 0.7);
       background-color: transparent;
       background-image: image(rgba(232, 232, 231, 0.7));
@@ -1609,7 +1609,7 @@ spinbutton:not(.vertical) {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
-    color: #888888;
+    color: #dcdcdc;
     border-color: rgba(51, 51, 51, 0.5);
     -gtk-icon-shadow: none;
     box-shadow: none; }
@@ -1670,7 +1670,7 @@ spinbutton.vertical button.down {
     -gtk-icon-shadow: none;
     outline-color: rgba(220, 220, 220, 0.3); }
   .osd spinbutton.vertical button:first-child:disabled {
-    color: #888888;
+    color: #dcdcdc;
     border-color: rgba(51, 51, 51, 0.7);
     background-color: transparent;
     background-image: image(rgba(232, 232, 231, 0.7));
@@ -3066,7 +3066,7 @@ radio {
       -gtk-icon-shadow: none; }
     .osd check:disabled, .osd
     radio:disabled {
-      color: #888888;
+      color: #dcdcdc;
       border-color: rgba(51, 51, 51, 0.7);
       background-color: transparent;
       background-image: image(rgba(232, 232, 231, 0.7));
@@ -3306,7 +3306,7 @@ scale {
         outline-color: rgba(220, 220, 220, 0.3);
         background-color: #e8e8e7; }
       .osd scale slider:disabled {
-        color: #888888;
+        color: #dcdcdc;
         border-color: rgba(51, 51, 51, 0.7);
         background-color: transparent;
         background-image: image(rgba(232, 232, 231, 0.7));
