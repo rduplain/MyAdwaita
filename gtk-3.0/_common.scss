@@ -476,6 +476,9 @@ button {
 
     @include button(normal);
 
+    background-image: none;
+    box-shadow: none;
+
     &.flat {
       @include button(undecorated);
       // to avoid adiacent buttons borders clashing when transitioning, the transition on the normal state is set

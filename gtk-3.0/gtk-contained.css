@@ -456,7 +456,9 @@ button {
   background-image: linear-gradient(to bottom, #e8e8e7, #dededd 60%, #cfcfcd);
   text-shadow: 0 1px rgba(255, 255, 255, 0.76923);
   -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.76923);
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8); }
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.8);
+  background-image: none;
+  box-shadow: none; }
   notebook > header > tabs > arrow, button.sidebar-button, button.titlebutton,
   button.flat {
     border-color: transparent;
