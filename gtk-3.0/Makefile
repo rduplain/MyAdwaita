@@ -3,7 +3,7 @@
 all: sass
 
 sass: sass-command
-	@$(SASS) --update --sourcemap=none .
+	@$(SASS) --quiet --sourcemap=none --stop-on-error --update .
 
 
 ## Run Recipes w/Automated Requirements
