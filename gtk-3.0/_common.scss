@@ -1400,7 +1400,7 @@ headerbar {
   border-color: $alt_borders_color;
   border-radius: 0;
 
-  @include headerbar_fill;
+  background: $bg_color;
 
   &:backdrop {
     border-color: $backdrop_borders_color;
