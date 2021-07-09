@@ -4677,6 +4677,9 @@ stackswitcher button.text-button.circular {
   min-height: 32px;
   padding: 0; }
 
+separator {
+  background-color: transparent; }
+
 /* GTK NAMED COLORS
    ----------------
    use responsibly! */
