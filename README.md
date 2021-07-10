@@ -1,8 +1,8 @@
 ## MyAdwaita - Personalization of the GNOME Adwaita Theme
 
-For both GTK 2 and GTK 3 applications, using dark mode, like old-school
-Zenburn, but emphasizing just three colors: dark gray, not-quite white, and
-alien-fruit-salad blue.
+A personal theme for both GTK 2 and GTK 3 applications, using dark mode, like
+old-school Zenburn, but emphasizing just three colors: dark gray, not-quite
+white, and alien-fruit-salad blue.
 
 
 ### Installation
